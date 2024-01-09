@@ -1,0 +1,8 @@
+.container {
+    /* display: block; */
+    height: 70px;
+    width: 100%;
+    position:fixed;
+    top: 0;
+    background-color: teal;
+}
