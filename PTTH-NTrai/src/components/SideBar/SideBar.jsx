@@ -7,7 +7,7 @@ const SideBar = () => {
         <p className={styles.hasBorder}>Về chúng tôi</p>
         <img className={styles.img}
           src="https://vatly.ued.udn.vn/uploads/hop-tac/2018_04/thumbnail.jpg"
-          alt="" srcset="" />
+          alt="" />
         <p className="description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odit 
           rem nobis eius recusandae nesciunt consequuntur ipsam, eligendi minima

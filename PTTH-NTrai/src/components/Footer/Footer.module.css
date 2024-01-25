@@ -1,0 +1,26 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+    outline: rgb(153, 153, 245) solid 1px;
+    /* gap: 80px; */
+    /* height: 80px; */
+}
+
+.footer img {
+    /* height: 100%; */
+    width: 100%;
+}
+
+.footer .footerLogo {
+    /* background-color: aqua; */
+    flex: 1;
+    border-right: 1px solid black;
+    padding: 0 30px;;
+}
+
+.footer .footerContact {
+    flex: 3;
+    padding: 0 30px;
+    /* background-color: red; */
+}
