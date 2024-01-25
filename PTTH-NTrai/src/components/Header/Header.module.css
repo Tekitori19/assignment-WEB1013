@@ -1,52 +1,25 @@
-.container {
-    height: 70px;
+.smallTitle{
+    font-size: 30px;
+    font-style: italic;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(130, 178, 219);
+}
+
+.largerTitle{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(130, 178, 219);
+    font-size: 45px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.img{
+    margin-top: 70px;
     width: 100%;
-    position:sticky;
-    top: 0;
-    background-color: teal;
-    display: flex;
-    font-variant: small-caps;
-}
-
-.headerLogo{
-    height: 100%;
-    cursor: pointer;
-    object-fit: cover;
-    flex: 3;
-}
-
-.headerList{
-    display: flex;
-    flex: 6;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
-}
-
-.headerListItem{
-    list-style: none;
-    margin-left: 20px;
-    color: whitesmoke;
-    cursor: pointer;
-}
-
-.headerRight{
-    display: flex;
-    flex: 3;
-    justify-content: center;
-    align-items: center;
-}
-
-.userIcon{
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.searchIcon{
-    margin-left: 10px;
-    font-size: 25px;
-    cursor: pointer;
 }

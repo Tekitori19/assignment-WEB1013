@@ -3,30 +3,11 @@ import styles from './Header.module.css'
 
 const Header = () => {
   return (
-    <div className={styles.container}>
-
-      <img className={styles.headerLogo}
-        src="https://th.bing.com/th/id/OIP.ipYPOsuyVnH8BfG-N70g0QHaE8?w=600&h=400&rs=1&pid=ImgDetMain" 
-        alt="Logo"
-      />
-
-      <ul className={styles.headerList}>
-        <li className={styles.headerListItem}>Trang chủ</li>
-        <li className={styles.headerListItem}>Liên hệ</li>
-        <li className={styles.headerListItem}>Góp ý</li>
-        <li className={styles.headerListItem}>Hỏi đáp</li>
-        <li className={styles.headerListItem}>Giới thiệu</li>
-      </ul>
-      
-      <div className={styles.headerRight}>
-        <img className={styles.userIcon}
-          src="https://th.bing.com/th/id/OIP.CjRitGCD6l29jagExY17ggHaE8?rs=1&pid=ImgDetMain"
-          alt="User"
-          title='Đăng nhập'
-          />
-        <i className={styles.searchIcon + " fa-solid fa-magnifying-glass"}></i>
-      </div>
-    </div>
+    <header>
+        <p className={styles.smallTitle}>Trường THPT</p>
+        <p className={styles.largerTitle}>Nguyễn Trãi</p>
+        <img className={styles.img} src="https://th.bing.com/th/id/R.68f10133a2ead1677708ce70de80a711?rik=4eMFwKpcx6g6Sw&pid=ImgRaw&r=0" alt="" srcset="" />
+    </header>
   )
 }
 

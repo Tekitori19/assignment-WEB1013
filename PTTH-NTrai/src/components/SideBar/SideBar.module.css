@@ -1,0 +1,49 @@
+.container{
+    flex: 3;
+    border-radius: 20px;
+    /* border: 1px solid rgb(80, 80, 80); */
+    background-color: rgb(247, 235, 230);
+}
+
+.content{
+    margin: 5% 10%;
+}
+
+.content p {
+    padding: 8px;
+    text-align: center;
+}
+
+.hasBorder{
+    font-weight: 600;
+    border-top: 1px solid gray ;
+    border-bottom: 1px solid gray ;
+}
+
+.img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.listItems{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item{
+    list-style: none;
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+.iconContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.iconContainer svg{
+    width: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}

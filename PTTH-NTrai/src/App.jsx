@@ -1,15 +1,12 @@
-import Header from './components/Header/Header'
-import styles from "./App.module.css";
+import NavBar from './components/NavBar/NavBar'
+import Home from './pages/home/Home'
 
 function App() {
 
   return (
     <>
-    <Header/>
-    <div className={styles.content}>
-      <p>???????????</p>
-      <p>???????????</p>
-    </div>
+    <NavBar/>
+    <Home/>
     </>
   )
 }
