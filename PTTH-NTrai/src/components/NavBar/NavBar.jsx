@@ -1,7 +1,11 @@
 import React from 'react'
 import styles from './NavBar.module.css'
+import { useState } from "react";
 
 const NavBar = () => {
+  const [active, setActive] = useState("Trang chủ")
+  const navItems = ["Trang chủ", "Liên hệ", "Góp ý", "Hỏi đáp", "Giới thiệu"]
+
   return (
     <nav className={styles.container}>
 
@@ -11,11 +15,20 @@ const NavBar = () => {
       />
 
       <ul className={styles.headerList}>
-        <li className={styles.headerListItem}>Trang chủ</li>
+        {/* <li className={styles.headerListItem}>Trang chủ</li>
         <li className={styles.headerListItem}>Liên hệ</li>
         <li className={styles.headerListItem}>Góp ý</li>
         <li className={styles.headerListItem}>Hỏi đáp</li>
-        <li className={styles.headerListItem}>Giới thiệu</li>
+        <li className={styles.headerListItem}>Giới thiệu</li> */}
+        {navItems.map(item =>
+           <li 
+            className={styles.headerListItem + `${active === item ? " " + styles.active : "" }`} 
+            key={item}
+            onClick={()=> setActive(item)}
+            >
+            {item}
+            </li>
+        )}
       </ul>
       
       <div className={styles.headerRight}>

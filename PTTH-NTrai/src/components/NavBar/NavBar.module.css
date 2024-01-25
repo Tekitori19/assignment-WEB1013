@@ -27,8 +27,21 @@
 .headerListItem{
     list-style: none;
     margin-left: 20px;
+    padding: 10px;
     color: whitesmoke;
     cursor: pointer;
+}
+
+.headerListItem:hover {
+    background-color: beige;
+    color: black;
+    border-radius: 10px;
+}
+
+.active{
+    background-color: beige;
+    color: black;
+    border-radius: 10px;  
 }
 
 .headerRight{
