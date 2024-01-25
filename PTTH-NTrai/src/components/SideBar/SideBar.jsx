@@ -1,6 +1,12 @@
 import styles from './SideBar.module.css'
+import { useState } from 'react'
 
 const SideBar = () => {
+  const [subjects, _] = useState([
+    "Toán", "Lí", "Hóa", "Sinh", "Văn","Sử", "Địa","GDCD","Thể dục","GDPQ"
+  ])
+
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
@@ -17,12 +23,13 @@ const SideBar = () => {
           Chương trình dạy
         </p>
         <ul className={styles.listItems}>
-            <li className={styles.item}>Toán</li>
+            {/* <li className={styles.item}>Toán</li>
             <li className={styles.item}>Lí</li>
             <li className={styles.item}>Hóa</li>
             <li className={styles.item}>Sinh</li>
             <li className={styles.item}>Sử</li>
-            <li className={styles.item}>Địa</li>
+            <li className={styles.item}>Địa</li> */}
+            {subjects.map(subject => <li className={styles.item} key={subject}>{subject}</li>)}
         </ul>
         <p className={styles.hasBorder}>
           Theo dõi chúng tôi
