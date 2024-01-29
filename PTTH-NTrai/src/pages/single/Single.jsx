@@ -2,10 +2,15 @@ import SideBar from "../../components/SideBar/SideBar"
 import styles from "./Single.module.css"
 import pic from "/src/assets/PXL_20231213_162538748.jpg"
 import { useParams } from "react-router-dom";
+// import {usePictures } from '../../providers/UrlProvider';
 
 
 const Single = () => {
   const {postId} = useParams();
+  
+  // const state = usePictures()
+
+  // console.log(state);
 
   return (
     <div className={styles.container}>

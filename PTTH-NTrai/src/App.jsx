@@ -3,16 +3,17 @@ import Home from './pages/home/Home'
 import Single from './pages/single/Single'
 import Footer from './components/Footer/Footer'
 import { Outlet } from "react-router-dom";
+import UrlProvider from './providers/UrlProvider';
 
 function App() {
 
   return (
     <>
-    <NavBar/>
-    {/* <Home/> */}
-    {/* <Single/> */}
-      <Outlet/>
-    <Footer/>
+      <UrlProvider>
+        <NavBar/>
+            <Outlet/>
+        <Footer/>
+      </UrlProvider>
     </>
   )
 }

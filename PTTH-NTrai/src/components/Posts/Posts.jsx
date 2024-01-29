@@ -1,7 +1,8 @@
 import Post from '../Post/Post'
 import styles from './Posts.module.css'
-import { useURLContext } from "../../providers/UrlProvider"; 
-import { useContext } from "react";
+// import { useURLContext } from "../../providers/UrlProvider"; 
+// import { useContext } from "react";
+import { useURLContext } from "../../providers/UrlProvider";
 
 const Posts = () => {
   // const postsID = [
@@ -27,14 +28,12 @@ const Posts = () => {
   //   },
   // ]
   
-  const {urls} = useContext()
-
-  console.log(urls);
+  const {urls} = useURLContext()
 
   return (
     // <UrlProvider>
       <div className={styles.container}>
-        {urls.map(url => <Post key={url.id} postId={url.id+1} url={url.url}></Post>)}
+        {urls.map(url => <Post key={url.id} postId={url.id+1} postID={url.url}></Post>)}
       </div>
     // </UrlProvider>
   )

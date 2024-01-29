@@ -1,10 +1,12 @@
 import React from 'react'
 import styles from './NavBar.module.css'
 import { useState } from "react";
+import { useURLContext } from "../../providers/UrlProvider";
 
 const NavBar = () => {
   const [active, setActive] = useState("Trang chủ")
   const navItems = ["Trang chủ", "Liên hệ", "Góp ý", "Hỏi đáp", "Giới thiệu"]
+  console.log(useURLContext());
 
   return (
     <nav className={styles.container}>
