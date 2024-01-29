@@ -1,5 +1,9 @@
-.test{
+.container{
     flex: 9;
-    height: 500px;
-    background-color: brown;
+    /* height: 500px; */
+    /* background-color: brown; */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
 }
