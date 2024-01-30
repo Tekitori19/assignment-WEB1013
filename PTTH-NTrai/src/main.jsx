@@ -26,6 +26,51 @@ const router = createBrowserRouter([
       }
     ]
   },
+  {
+    path: "/contact",
+    element: <App/>,
+    errorElement: <ErrorPage/>,
+    children:[
+      {
+        path: "",
+        element: <Home />,
+      },
+      {
+        path: "post/:postId",
+        element: <Single />,
+      }
+    ]
+  },
+  {
+    path: "/faq",
+    element: <App/>,
+    errorElement: <ErrorPage/>,
+    children:[
+      {
+        path: "",
+        element: <Home />,
+      },
+      {
+        path: "post/:postId",
+        element: <Single />,
+      }
+    ]
+  },
+  {
+    path: "/about",
+    element: <App/>,
+    errorElement: <ErrorPage/>,
+    children:[
+      {
+        path: "",
+        element: <Home />,
+      },
+      {
+        path: "post/:postId",
+        element: <Single />,
+      }
+    ]
+  },
   
 ]);
 

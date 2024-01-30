@@ -23,12 +23,6 @@ const SideBar = () => {
           Chương trình dạy
         </p>
         <ul className={styles.listItems}>
-            {/* <li className={styles.item}>Toán</li>
-            <li className={styles.item}>Lí</li>
-            <li className={styles.item}>Hóa</li>
-            <li className={styles.item}>Sinh</li>
-            <li className={styles.item}>Sử</li>
-            <li className={styles.item}>Địa</li> */}
             {subjects.map(subject => <li className={styles.item} key={subject}>{subject}</li>)}
         </ul>
         <p className={styles.hasBorder}>

@@ -1,8 +1,7 @@
 import styles from "./Post.module.css"
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Post = ({postId, url}) => {
-  // console.log(url);
 
   return (
     <Link to={`post/${postId}`} className={styles.card}>
@@ -11,7 +10,7 @@ const Post = ({postId, url}) => {
          alt="" />
          <span className={styles.postCat}>Toán</span>
          <span className={styles.postCat}>Lí</span>
-        <h2>Bài đăng {postId}</h2>
+        <h2>Bài đăng {postId+1}</h2>
         <span className={styles.postTime}>1 giờ trước</span>
         <p>Lorem ipsum dolor sit amet consectetur, 
             adipisicing elit. Fugiat excepturi, esse

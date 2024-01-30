@@ -1,12 +1,18 @@
-import React from 'react'
 import styles from './NavBar.module.css'
 import { useState } from "react";
-import { useURLContext } from "../../providers/UrlProvider";
+import { Link } from 'react-router-dom';
 
+const navItems = ["Trang chủ", "Liên hệ", "Góp ý", "Hỏi đáp", "Giới thiệu"]
+const linkItems = {
+  "Trang chủ": "/",
+  "Liên hệ": "/contact",
+  "Hỏi đáp": "/faq",
+  "Giới thiệu": "/about",
+
+}
+    
 const NavBar = () => {
   const [active, setActive] = useState("Trang chủ")
-  const navItems = ["Trang chủ", "Liên hệ", "Góp ý", "Hỏi đáp", "Giới thiệu"]
-  console.log(useURLContext());
 
   return (
     <nav className={styles.container}>
@@ -17,20 +23,21 @@ const NavBar = () => {
       />
 
       <ul className={styles.headerList}>
-        {/* <li className={styles.headerListItem}>Trang chủ</li>
-        <li className={styles.headerListItem}>Liên hệ</li>
-        <li className={styles.headerListItem}>Góp ý</li>
-        <li className={styles.headerListItem}>Hỏi đáp</li>
-        <li className={styles.headerListItem}>Giới thiệu</li> */}
-        {navItems.map(item =>
-           <li 
-            className={styles.headerListItem + `${active === item ? " " + styles.active : "" }`} 
-            key={item}
-            onClick={()=> setActive(item)}
-            >
-            {item}
-            </li>
-        )}
+        {
+          navItems.map(item =>
+           <Link to={linkItems[item]} key={item} className={styles.link}>
+             <li
+              className={styles.headerListItem + `${active === item ? " " + styles.active : "" }`}
+              onClick={()=> {
+                console.log(linkItems);
+                setActive(item)
+              }}
+              >
+                 {item}
+              </li>
+           </Link>
+          )
+        }
       </ul>
       
       <div className={styles.headerRight}>
