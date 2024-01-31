@@ -1,0 +1,71 @@
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formContainner{
+    max-width: 978px;
+}
+
+.formGroup{
+    display: flex;
+    flex-direction: column;
+}
+
+.controlContainer{
+    display: flex;
+    max-width: 100%;
+}
+
+.formControl{
+    margin-bottom: 5px;
+}
+
+.formControl input{
+    border-radius: 5px;
+    height: 20px;
+    width: 80%;
+    display: block;
+}
+
+.formControl label{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.formControl>textarea{
+    width: 90%;
+    border-radius: 5px;
+}
+
+.formControl label[for="ghiChu"]{
+    display: block;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.btn{
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: tomato;
+    background-color: teal;
+    cursor: pointer;
+    border: 1px solid wheat;
+    width: 150px;
+}
+
+.btn[type="submit"]{
+    margin-right: 25px;
+}
+
+.btn[type="reset"]{
+    color: teal;
+    background-color: tomato;
+}
+
+.BtnGroup{
+    display: flex;
+}

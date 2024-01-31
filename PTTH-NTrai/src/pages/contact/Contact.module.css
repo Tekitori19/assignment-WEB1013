@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.content{
+    height: 100%;
+    padding: 30px;
+    margin-top: 10%;
+    font-family: Canela Deck Web;
+    font-size: larger;
+}
+
+.content>p{
+    font-weight: 500;
+}
+
+.container>img{
+    /* flex: 1; */
+    /* height: 100%; */
+    max-width: 50%;
+    object-fit: cover;
+}

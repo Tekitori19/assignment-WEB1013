@@ -6,7 +6,7 @@
     background-color: teal;
     display: flex;
     font-variant: small-caps;
-    z-index: 1;
+    z-index: 99;
 }
 
 .headerLogo{
@@ -25,22 +25,35 @@
 }
 
 .link{
+    /* color: blue; */
     text-decoration: none;
-}
-
-.headerListItem{
-    list-style: none;
+    padding: 10px ;
     margin-left: 20px;
-    padding: 10px;
     color: whitesmoke;
-    cursor: pointer;
+    /* background-color: aqua; */
+    display: inline-block;
 }
 
-.headerListItem:hover {
+.link:hover{
+    text-decoration: none;
     background-color: beige;
     color: black;
     border-radius: 10px;
 }
+
+.headerListItem{
+    list-style: none;
+    /* margin-left: 20px; */
+    /* padding: 10px; */
+    /* color: whitesmoke; */
+    cursor: pointer;
+}
+
+/* .headerListItem:hover {
+    background-color: beige;
+    color: black;
+    border-radius: 10px;
+} */
 
 .active{
     background-color: beige;

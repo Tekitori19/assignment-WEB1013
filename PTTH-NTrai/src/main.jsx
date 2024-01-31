@@ -9,6 +9,9 @@ import {
 import Single from './pages/single/Single.jsx';
 import ErrorPage from './ErrorPage.jsx';
 import Home from './pages/home/Home.jsx';
+import About from './pages/About/About.jsx';
+import Contact from './pages/contact/Contact.jsx';
+import FeedBack from './pages/feedback/FeedBack.jsx';
 
 const router = createBrowserRouter([
   {
@@ -23,21 +26,18 @@ const router = createBrowserRouter([
       {
         path: "post/:postId",
         element: <Single />,
-      }
-    ]
-  },
-  {
-    path: "/contact",
-    element: <App/>,
-    errorElement: <ErrorPage/>,
-    children:[
-      {
-        path: "",
-        element: <Home />,
       },
       {
-        path: "post/:postId",
-        element: <Single />,
+        path: "about",
+        element: <About />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+      {
+        path: "feedback",
+        element: <FeedBack />,
       }
     ]
   },
@@ -55,23 +55,7 @@ const router = createBrowserRouter([
         element: <Single />,
       }
     ]
-  },
-  {
-    path: "/about",
-    element: <App/>,
-    errorElement: <ErrorPage/>,
-    children:[
-      {
-        path: "",
-        element: <Home />,
-      },
-      {
-        path: "post/:postId",
-        element: <Single />,
-      }
-    ]
-  },
-  
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

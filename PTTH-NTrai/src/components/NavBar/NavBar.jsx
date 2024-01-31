@@ -1,19 +1,16 @@
 import styles from './NavBar.module.css'
-import { useState } from "react";
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const navItems = ["Trang chủ", "Liên hệ", "Góp ý", "Hỏi đáp", "Giới thiệu"]
 const linkItems = {
   "Trang chủ": "/",
   "Liên hệ": "/contact",
+  "Góp ý": "/feedback",
   "Hỏi đáp": "/faq",
   "Giới thiệu": "/about",
-
 }
-    
-const NavBar = () => {
-  const [active, setActive] = useState("Trang chủ")
 
+const NavBar = () => {
   return (
     <nav className={styles.container}>
 
@@ -25,17 +22,25 @@ const NavBar = () => {
       <ul className={styles.headerList}>
         {
           navItems.map(item =>
-           <Link to={linkItems[item]} key={item} className={styles.link}>
+           <NavLink 
+            to={linkItems[item]}
+            key={item}
+            className={({isActive}) =>
+                isActive ?
+                  `${styles.link} ${styles.active}`:
+                  `${styles.link}`
+          }
+          >
              <li
-              className={styles.headerListItem + `${active === item ? " " + styles.active : "" }`}
-              onClick={()=> {
-                console.log(linkItems);
-                setActive(item)
-              }}
+              className={styles.headerListItem }
+              // onClick={()=> {
+              //   currentState.state = item
+              //   setActive(item)
+              // }}
               >
                  {item}
               </li>
-           </Link>
+           </NavLink>
           )
         }
       </ul>
