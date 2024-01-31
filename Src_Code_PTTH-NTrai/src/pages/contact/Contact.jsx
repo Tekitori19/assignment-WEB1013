@@ -1,6 +1,7 @@
 import styles from './Contact.module.css'
 
 const Contact = () => {
+  document.title = "Liên hệ"
   return (
     <div className={styles.container}>
         <div className={styles.content}>

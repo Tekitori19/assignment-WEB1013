@@ -12,6 +12,7 @@ import Home from './pages/home/Home.jsx';
 import About from './pages/About/About.jsx';
 import Contact from './pages/contact/Contact.jsx';
 import FeedBack from './pages/feedback/FeedBack.jsx';
+import FAQ from './pages/FAQ/FAQ.jsx';
 
 const router = createBrowserRouter([
   {
@@ -38,21 +39,10 @@ const router = createBrowserRouter([
       {
         path: "feedback",
         element: <FeedBack />,
-      }
-    ]
-  },
-  {
-    path: "/faq",
-    element: <App/>,
-    errorElement: <ErrorPage/>,
-    children:[
-      {
-        path: "",
-        element: <Home />,
       },
       {
-        path: "post/:postId",
-        element: <Single />,
+        path: "faq",
+        element: <FAQ />,
       }
     ]
   }

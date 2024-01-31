@@ -10,10 +10,16 @@
 }
 
 .headerLogo{
-    height: 100%;
+    /* height: 100%; */
     cursor: pointer;
     object-fit: cover;
     flex: 3;
+}
+
+.headerLogo img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
 }
 
 .headerList{

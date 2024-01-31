@@ -1,0 +1,29 @@
+.container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 60px;
+}
+
+.container h1{
+    text-align: center;
+}
+
+.questionList {
+    margin-top: 20px;
+}
+
+.questionItem {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+}
+
+.questionItem h3 {
+    color: #333333;
+}
+
+.questionItem p {
+    color: #666666;
+}

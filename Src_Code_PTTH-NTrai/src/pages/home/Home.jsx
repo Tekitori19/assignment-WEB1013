@@ -6,6 +6,7 @@ import "./Home.css"
 import UrlProvider from '../../providers/UrlProvider'
 
 const Home = () => {
+  document.title= "Trang chủ"
   return (
     <>
         <Header/>

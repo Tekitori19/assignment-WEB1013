@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom'
 const SingleContent = () => {
   const {postId} = useParams()
   const {urls} = useURLContext()
+  document.title = `Bài đăng ${postId+1}`
 
   return ( 
     <div className={styles.content}>

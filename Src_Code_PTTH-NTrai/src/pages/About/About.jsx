@@ -2,6 +2,7 @@ import styles from "./About.module.css"
 import SideBar from "../../components/SideBar/SideBar"
 
 const About = () => {
+  document.title ="Giới thiệu"
   return (
     <div>
       <div className={styles.container}>

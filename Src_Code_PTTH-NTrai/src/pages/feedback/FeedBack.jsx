@@ -1,24 +1,14 @@
 import styles from './FeedBack.module.css'
 import toast, { Toaster } from 'react-hot-toast'
-// import { useState } from 'react';
 
 const notify = () => toast.success('Gửi thành công')
 const reset = () => toast('Đã Reset', {
     icon: '👏',
   });
 
-// const formValue = {
-//     ho:"",
-//     ten:"",
-//     email:"",
-//     reEnterEmail:"",
-//     text:""
-// }
-
 const FeedBack = () => {
-//   const [value, setValue] = useState()
 
-//   if (formValue.email != formValue.reEnterEmail) toast.error("This didn't work.")
+  document.title = "Góp ý"
 
   return (
     <form onSubmit={e=> 
@@ -27,6 +17,8 @@ const FeedBack = () => {
             e.preventDefault()
         }}
         className={styles.form}>
+          <h1>Cảm ơn bạn vì đã vào trang web của chúng tôi</h1>
+          <p>Mọi ý kiến đóng góp vui lòng điền vào biểu mẫu bên dưới</p>
         <div className={styles.formContainner}>
             <div className={styles.formGroup}>
                 <h2>Họ và tên</h2>

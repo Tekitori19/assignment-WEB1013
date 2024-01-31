@@ -14,10 +14,12 @@ const NavBar = () => {
   return (
     <nav className={styles.container}>
 
-      <img className={styles.headerLogo}
-        src="https://th.bing.com/th/id/OIP.ipYPOsuyVnH8BfG-N70g0QHaE8?w=600&h=400&rs=1&pid=ImgDetMain" 
-        alt="Logo"
-      />
+      <NavLink className={styles.headerLogo} to={linkItems["Trang chủ"]}>
+        <img 
+          src="https://th.bing.com/th/id/OIP.ipYPOsuyVnH8BfG-N70g0QHaE8?w=600&h=400&rs=1&pid=ImgDetMain"
+          alt="Logo"
+        />
+      </NavLink>
 
       <ul className={styles.headerList}>
         {
