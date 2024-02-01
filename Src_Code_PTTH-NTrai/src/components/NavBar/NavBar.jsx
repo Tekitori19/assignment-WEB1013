@@ -2,10 +2,10 @@ import styles from './NavBar.module.css'
 import { NavLink } from 'react-router-dom';
 
 const navItems = ["Trang chủ", "Liên hệ", "Góp ý", "Hỏi đáp", "Giới thiệu"]
-const baseURL= "/assignment-WEB1013/"
+const baseURL= "/assignment-WEB1013"
 
 const linkItems = {
-  "Trang chủ": `${baseURL}`,
+  "Trang chủ": `${baseURL}/`,
   "Liên hệ": `${baseURL}/contact`,
   "Góp ý": `${baseURL}/feedback`,
   "Hỏi đáp": `${baseURL}/faq`,
@@ -28,6 +28,7 @@ const NavBar = () => {
           navItems.map(item =>
            <NavLink 
             to={linkItems[item]}
+            end
             key={item}
             className={({isActive}) =>
                 isActive ?
