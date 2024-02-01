@@ -16,7 +16,7 @@ import FAQ from './pages/FAQ/FAQ.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/assignment-WEB1013/",
     element: <App/>,
     errorElement: <ErrorPage/>,
     children:[
