@@ -1,11 +1,12 @@
 import styles from './Footer.module.css'
+import pic from '../../assets/LOGO_Truong.jpg'
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
         <div className={styles.footerLogo}>
             <img 
-               src="https://th.bing.com/th/id/OIP.ipYPOsuyVnH8BfG-N70g0QHaE8?w=600&h=400&rs=1&pid=ImgDetMain" 
+               src={pic} 
                alt="Logo"
             />
             <p>

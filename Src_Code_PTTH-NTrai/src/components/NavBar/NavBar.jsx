@@ -1,4 +1,5 @@
 import styles from './NavBar.module.css'
+import pic from '../../assets/LOGO_Truong.jpg'
 import { NavLink } from 'react-router-dom';
 
 const navItems = ["Trang chủ", "Liên hệ", "Góp ý", "Hỏi đáp", "Giới thiệu"]
@@ -18,7 +19,7 @@ const NavBar = () => {
 
       <NavLink className={styles.headerLogo} to={linkItems["Trang chủ"]}>
         <img 
-          src="https://th.bing.com/th/id/OIP.ipYPOsuyVnH8BfG-N70g0QHaE8?w=600&h=400&rs=1&pid=ImgDetMain"
+          src={pic}
           alt="Logo"
         />
       </NavLink>
