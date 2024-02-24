@@ -1,5 +1,5 @@
 .container {
-    background-color: #f2f2f2;
+    background-color: #dcfafa;
     padding: 20px;
     border-radius: 10px;
     margin: 60px;
@@ -16,8 +16,14 @@
 .questionItem {
     margin-bottom: 20px;
     padding: 10px;
-    background-color: #e6e6e6;
+    background-color: #dcfafa;
     border-radius: 5px;
+}
+
+.questionItem img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
 .questionItem h3 {
@@ -26,4 +32,7 @@
 
 .questionItem p {
     color: #666666;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }

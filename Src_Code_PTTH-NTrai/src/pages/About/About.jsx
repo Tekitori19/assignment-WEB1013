@@ -10,14 +10,10 @@ const About = () => {
               Giới thiệu về trường Nguyễn Trãi
           </h1>
           <p>
-              Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Aut placeat ullam illo
-              nobis. Doloribus ratione inventore iure rem
-              eaque. Fuga similique, ipsam reiciendis sequi
-              aperiam, suscipit illo amet, aut minima quidem
-              quaerat officiis dicta! Nostrum nam repellendus
-              itaque sunt consectetur veritatis voluptatibus
-              asperiores ea, eaque hic vitae nobis earum totam.
+          Trường Trung học Phổ thông Nguyễn Trãi, thành lập hơn 40 năm, 
+          tự hào đạt chuẩn quốc gia về chất lượng đầu ra tốt. Với đội ngũ giáo viên 
+          chất lượng và cơ sở vật chất hiện đại, trường cam kết mang đến cho học sinh 
+          một môi trường học tập tích cực và đầy tiềm năng để phát triển.
           </p>
       </div>
       <SideBar></SideBar>

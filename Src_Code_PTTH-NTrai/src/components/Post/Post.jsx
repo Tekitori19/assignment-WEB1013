@@ -1,7 +1,8 @@
 import styles from "./Post.module.css"
 import { Link } from "react-router-dom";
 
-const Post = ({postId, url}) => {
+const Post = ({postId, url, title, content, date}) => {
+  const contentLimit = 100
 
   return (
     <Link to={`post/${postId}`} className={styles.card}>
@@ -10,12 +11,18 @@ const Post = ({postId, url}) => {
          alt="" />
          <span className={styles.postCat}>Toán</span>
          <span className={styles.postCat}>Lí</span>
-        <h2>Bài đăng {postId+1}</h2>
-        <span className={styles.postTime}>1 giờ trước</span>
-        <p>Lorem ipsum dolor sit amet consectetur, 
+        <h2>{title}</h2>
+        <span className={styles.postTime}>{date}</span>
+        <p>
+            {/* Lorem ipsum dolor sit amet consectetur, 
             adipisicing elit. Fugiat excepturi, esse
             deserunt sapiente eum soluta nesciunt odit 
-            nostrum mollitia rem.</p>
+            nostrum mollitia rem. */}
+            {
+              content.length > contentLimit ?
+              `${content.substring(0, contentLimit)}...`: content 
+            }
+        </p>
     </Link>
   )
 }

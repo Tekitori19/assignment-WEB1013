@@ -1,16 +1,25 @@
 import Post from '../Post/Post'
 import styles from './Posts.module.css'
 import { useURLContext } from "../../providers/UrlProvider";
-import UrlProvider from '../../providers/UrlProvider';
 
 const Posts = () => {
   
-  const {urls} = useURLContext()
+  const {datas} = useURLContext()
 
   return (
     // <UrlProvider>
       <div className={styles.container}>
-        {urls.map(u => <Post key={u.id} postId={u.id} url={u.url}></Post>)}
+        {
+          datas.map(
+            u => <Post 
+            key={u.id} 
+            postId={u.id} 
+            url={u.url}
+            title = {u.title}
+            content = {u.content} 
+            date = {u.date}
+            />)
+        }
       </div>
     // </UrlProvider>
   )

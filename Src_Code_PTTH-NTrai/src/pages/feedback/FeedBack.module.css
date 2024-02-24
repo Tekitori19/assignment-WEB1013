@@ -1,3 +1,14 @@
+.container{
+    display: flex;
+    height: 100vh;
+    gap: 10px;
+}
+
+.container > img{
+    max-width: 50%;
+    object-fit: cover;
+}
+
 .form{
     display: flex;
     justify-content: center;
@@ -29,6 +40,10 @@
     height: 20px;
     width: 80%;
     display: block;
+}
+
+.formControl input[id='form-name']{
+    width: 180%;
 }
 
 .formControl label{

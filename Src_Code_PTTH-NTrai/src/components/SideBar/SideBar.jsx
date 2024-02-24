@@ -15,9 +15,9 @@ const SideBar = () => {
           src="https://vatly.ued.udn.vn/uploads/hop-tac/2018_04/thumbnail.jpg"
           alt="" />
         <p className="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odit 
-          rem nobis eius recusandae nesciunt consequuntur ipsam, eligendi minima
-          consequatur dolorum ipsa sit, laboriosam dicta? Et optio aliquid minima
+          Chúng tôi tự hào vì Trường Trung học Phổ thông Nguyễn Trãi đã đạt chuẩn quốc gia. 
+          Điều này là minh chứng cho sự cam kết và nỗ lực không ngừng nghỉ của tất cả các bên 
+          liên quan đến việc cung cấp chất lượng giáo dục tốt nhất cho học sinh.
         </p>
         <p className={styles.hasBorder}>
           Chương trình dạy
