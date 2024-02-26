@@ -18,6 +18,7 @@ const Posts = () => {
             title = {u.title}
             content = {u.content} 
             date = {u.date}
+            tags = {u.tags}
             />)
         }
       </div>
